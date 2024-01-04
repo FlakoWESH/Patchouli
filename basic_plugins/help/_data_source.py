@@ -6,7 +6,7 @@ from utils.manager import admin_manager, plugin_data_manager, plugins2settings_m
 
 from ._utils import HelpImageBuild
 
-random_bk_path = IMAGE_PATH / "background" / "help" / "simple_help"
+random_bk_path = IMAGE_PATH / "background" / "create_mat"
 
 background = IMAGE_PATH / "background" / "0.png"
 

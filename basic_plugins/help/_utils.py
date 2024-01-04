@@ -17,7 +17,7 @@ for x in os.listdir(GROUP_HELP_PATH):
     group_help_image = GROUP_HELP_PATH / x
     group_help_image.unlink()
 
-BACKGROUND_PATH = IMAGE_PATH / "background" / "help" / "simple_help"
+BACKGROUND_PATH = IMAGE_PATH / "background" / "create_mat"
 
 LOGO_PATH = TEMPLATE_PATH / "menu" / "res" / "logo"
 

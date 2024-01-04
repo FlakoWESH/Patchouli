@@ -61,4 +61,4 @@ async def _(bot: Bot, event: MessageEvent, arg: Message = CommandArg()):
                 if simple_help_image.exists():
                     simple_help_image.unlink()
                 await create_help_img(None)
-            await simple_help.finish(image("simple_help.png"))
+            await simple_help.finish(image(".png"))
