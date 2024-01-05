@@ -40,7 +40,7 @@ __plugin_des__ = "猜成语"
 __plugin_type__ = ("群内小游戏",)
 __plugin_cmd__ = ["猜成语", "提示", "结束猜成语"]
 __plugin_version__ = 0.1
-__plugin_author__ = "yajiwa"
+
 
 __plugin_settings__ = {
     "level": 5,

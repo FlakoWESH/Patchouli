@@ -17,8 +17,10 @@ from models.sign_group_user import SignGroupUser
 from utils.image_utils import BuildImage
 from utils.message_builder import image
 from utils.utils import get_user_avatar
+# from utils.http_utils import AsyncHttpx
 
 from .config import (
+    # 改API图库了
     SIGN_BACKGROUND_PATH,
     SIGN_BORDER_PATH,
     SIGN_RESOURCE_PATH,
@@ -165,12 +167,11 @@ def _generate_card(
         font_size=font_size,
     )
     gift_border.text((0, 0), gift, center_type="center")
-
     bk = BuildImage(
         876,
         424,
-        background=SIGN_BACKGROUND_PATH
-        / random.choice(os.listdir(SIGN_BACKGROUND_PATH)),
+        background=SIGN_BACKGROUND_PATH / random.choice(os.listdir(SIGN_BACKGROUND_PATH)),
+        #background=AsyncHttpx().get("https://img.moehu.org/pic.php?id=pc"),
         font_size=25,
     )
     A = BuildImage(876, 274, background=SIGN_RESOURCE_PATH / "white.png")
